@@ -32,7 +32,7 @@ function App() {
         <Counter clicksNum={clicksNum}/>
 
         <Button text="Add click" isClickButton={true} onClick={handleClick}/>
-        <Button text="discount click" isClickButton={true} onClick={discountClick}/>
+        <Button text="Discount click" isClickButton={true} onClick={discountClick}/>
         <Button text="Restart" isClickButton={false} onClick={RestartCounter}/>
       </div>
 
