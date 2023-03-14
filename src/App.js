@@ -17,6 +17,12 @@ function App() {
     console.log('RestartCounter')
     setClicksNum(0);
   }
+
+  const discountClick = () => {
+    console.log('click')
+    setClicksNum(clicksNum - 1);
+  }
+
   return (
     <div className="App">
       <div className="freecodecamp-logo-contenedor">
@@ -25,7 +31,8 @@ function App() {
       <div className='contenedor-principal'>
         <Counter clicksNum={clicksNum}/>
 
-        <Button text="Click" isClickButton={true} onClick={handleClick}/>
+        <Button text="Add click" isClickButton={true} onClick={handleClick}/>
+        <Button text="discount click" isClickButton={true} onClick={discountClick}/>
         <Button text="Restart" isClickButton={false} onClick={RestartCounter}/>
       </div>
 
